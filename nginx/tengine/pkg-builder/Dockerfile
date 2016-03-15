@@ -29,8 +29,9 @@ RUN su nginx -c 'git clone https://github.com/alibaba/tengine.git'
 
 WORKDIR /home/nginx/tengine
 RUN su nginx -c 'mv packages/debian .'
+RUN sed -i 's/--with-ipv6/--with-ipv6 --with-http_concat_module/g' ./debian/rules
 
-ENV DEB_BUILD_OPTIONS nocheck
+ENV DEB_BUILD_OPTIONS nocheck 
 RUN su nginx -c 'dpkg-buildpackage -rfakeroot -uc -b'
 
 VOLUME ["/packages"]
