@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER yangbt.droid@gmail.com
+MAINTAINER robert.pub@gmail.com
 
 ENV TENGINE_VERSION 2.1.0-1
 

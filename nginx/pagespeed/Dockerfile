@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER yangbt.droid@gmail.com
+MAINTAINER robert.pub@gmail.com
 
 ENV NGINX_VERSION 1.9.12-1~jessie
 

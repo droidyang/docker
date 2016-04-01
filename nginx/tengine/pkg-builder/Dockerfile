@@ -1,6 +1,6 @@
 # Pull base image.
 FROM debian:jessie
-MAINTAINER yangbt.droid@gmail.com
+MAINTAINER robert.pub@gmail.com
 
 #use mirror in china
 RUN  echo "deb http://mirrors.163.com/debian/ jessie main non-free contrib"> /etc/apt/sources.list 
